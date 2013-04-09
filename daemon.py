@@ -1,5 +1,15 @@
 #!/usr/bin/env python
 
+
+#############################################################
+# Script: sighandler.py                                      
+# Description:                                               
+#   Demonstrate generic polymorphism example of how to setup and
+#   handle implemented signals through python.                  
+#                                                               
+# Author: Cody Lane                                             
+# Date: 12-4-2009                                               
+############################################################# 
 import sys, os, time, atexit
 import signal
 class SignalHandler:                                           
@@ -28,6 +38,12 @@ class SigAction(SignalHandler):
     def __repr__(self):
         return "<Class:%s signal:%s>" %(self.__class__.__name__, self.signum)
 
+##################
+#
+#Source:http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+#
+##################
+		
 class Daemon:
 	
 	def __init__(self, pidfile, stdin='/dev/null', stdout='/dev/null', stderr='/dev/null'):
