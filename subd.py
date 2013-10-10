@@ -57,5 +57,5 @@ if __name__ == "__main__":
                 print StaticConfig.strHelp
                 sys.exit(2)
         else:
-            print "usage: %s %s" % sys.argv[0] % str(self.ReactDict)
+            print "usage: %s %s" % sys.argv[0] % ReactDict
             sys.exit(2)
